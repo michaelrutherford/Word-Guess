@@ -49,7 +49,7 @@ class PlotWindow(QWidget):
         """
 
         self.score_list = []
-        with open("scores.txt", "r+") as f:
+        with open("data/scores.txt", "r+") as f:
             self.score_list = f.read().splitlines()
         for i in range(0, len(self.score_list)):
             self.score_list[i] = int(self.score_list[i])
@@ -109,7 +109,7 @@ class PlotWindow(QWidget):
         Clear the scores from the score file and reset_values bar graph window
         """
 
-        open("scores.txt", "w").close()
+        open("data/scores.txt", "w").close()
         self.x = []
         self.bargraph_plot.setXRange(1, 5, padding=0.1)
         self.bargraph_plot.plot(self.x, self.y, clear=True)
@@ -381,7 +381,7 @@ class MainWindow(QMainWindow):
         self.guess_count = 0
 
         word_list = []
-        with open("words.txt", "r") as f:
+        with open("data/words.txt", "r") as f:
             word_list = f.read().splitlines()
 
         self.answer = random.choice(word_list)
@@ -436,7 +436,7 @@ class MainWindow(QMainWindow):
             self.show_game_over(False)
 
         if self.guess == self.answer:
-            with open("scores.txt", "a+") as f:
+            with open("data/scores.txt", "a+") as f:
                 f.write(str(self.guess_count) + "\n")
             self.show_game_over(True)
 
