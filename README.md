@@ -1,5 +1,5 @@
 # word-guess
-word-guess is an Python implementation of Wordle.
+word-guess is a Python implementation of Wordle.
 
 ![screenshot-01](data/screenshots/screenshot-01.PNG)
 
