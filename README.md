@@ -1,6 +1,8 @@
 # word-guess
 word-guess is an Python implementation of Wordle.
 
+![screenshot-01](data/screenshots/screenshot-01.PNG)
+
 ## Description
 Wordle is a word game in which the player has 6 attempts to guess a random 5 letter word. Each letter of the player's guess is assigned a color based on accuracy. Green indicates a letter is in the correct position, yellow indicates a letter is in the wrong position, and grey indicates a letter is not located in any position. If the player has guessed 6 times and has still not guessed correctly, the correct answer is displayed.
 
