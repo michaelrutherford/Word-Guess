@@ -1,4 +1,4 @@
-# Word Guess
+# word-guess
 # Copyright (C) 2022 Michael Rutherford
 #
 # This program is free software: you can redistribute it and/or modify
@@ -146,7 +146,7 @@ class MainWindow(QMainWindow):
         self.info_button.setFixedHeight(45)
 
         header_title = QLabel(self)
-        header_title.setText("Word Guess")
+        header_title.setText("word-guess")
         header_title.setFont(QFont("Arial", 24))
         header_title.setStyleSheet("color: black")
         header_title.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
@@ -350,7 +350,7 @@ class MainWindow(QMainWindow):
         """
 
         self.win = QWidget()
-        self.setWindowTitle("Word Guess")
+        self.setWindowTitle("word-guess")
         self.main_layout = QVBoxLayout()
         self.win.setLayout(self.main_layout)
         self.setCentralWidget(self.win)
@@ -510,7 +510,7 @@ class MainWindow(QMainWindow):
         info_window = QMessageBox(self)
         info_window.setWindowTitle("Info")
         info_window.setText(
-            "Word Guess is a Python implementation of Wordle.\n\nBy: Michael Rutherford\n\nCopyright 2022"
+            "word-guess is a Python implementation of Wordle.\n\nLicensed under version 3 of the GPL\nCopyright (C) 2022 Michael Rutherford"
         )
         info_window.show()
 
