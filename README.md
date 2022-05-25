@@ -25,3 +25,8 @@ python word-guess.py
 
 ## License
 word-guess is licensed under version 3 of the GPL. For more information, see `LICENSE`.
+
+## Links
+* [PyQt6](https://pypi.org/project/PyQt6/)
+* [PyQtGraph](https://www.pyqtgraph.org/)
+* [Wordle](https://www.nytimes.com/games/wordle/index.html)
