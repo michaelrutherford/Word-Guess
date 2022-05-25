@@ -12,7 +12,7 @@ word-guess is a straightforward implementation of Wordle written in Python. It f
 
 To install these dependencies, run the following command:
 ```
-pip install pyqt6 pyqtgraph
+pip install -r requirements.txt
 ```
 
 ## Running
